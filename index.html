@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./Assets/Logo.png" alt="Company NewsLogo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-items" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input"  placeholder="e.g Science">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="cards-container">
+           
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This the title</h3>
+                <h6 class="news-source" id="news-source">End gadget 22/06/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias, dolores dolorem sint ullam veritatis possimus tempore reprehenderit necessitatibus quos.</p>
+
+            </div>
+        </div>
+    </template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+<!-- <script type="module" src="index.js"></script> -->
+</html>
